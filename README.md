@@ -78,7 +78,7 @@ An example of the use of [Vanilla Framework](https://vanillaframework.io/) with 
 
 2. `cd vanilla-framework-example`
 
-3. `yarn` or `npm i`
+3. `yarn` or `npm i`  (or [`npm i --legacy-peer-deps`](https://stackoverflow.com/questions/66239691/what-does-npm-install-legacy-peer-deps-do-exactly-when-is-it-recommended-wh))
 
 4. `yarn start` or `npm start`
 
