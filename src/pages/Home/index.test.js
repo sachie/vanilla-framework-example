@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { MemoryRouter } from 'react-router-dom';
 import { render, screen, waitForElementToBeRemoved } from '@testing-library/react';
 import { getPosts } from 'services/postService';
-import messages from 'utils/texts';
+import texts from 'utils/texts';
 import Home from './index';
 
 const queryClient = new QueryClient({
@@ -93,12 +93,12 @@ test('renders home page and multiple posts', async () => {
     </QueryClientProvider>,
   );
 
-  expect(screen.getByText(messages.mainPage.loadingPosts)).toBeInTheDocument();
-  await waitForElementToBeRemoved(() => screen.queryByText(messages.mainPage.loadingPosts), {
+  expect(screen.getByText(texts.mainPage.loadingPosts)).toBeInTheDocument();
+  await waitForElementToBeRemoved(() => screen.queryByText(texts.mainPage.loadingPosts), {
     timeout: 10000,
   });
-  expect(screen.getByText(messages.common.title)).toBeInTheDocument();
-  expect(screen.getByText(messages.mainPage.sachie)).toBeInTheDocument();
+  expect(screen.getByText(texts.common.title)).toBeInTheDocument();
+  expect(screen.getByText(texts.mainPage.sachie)).toBeInTheDocument();
   expect(screen.getByText(mockPosts[0].title.rendered)).toBeInTheDocument();
   expect(screen.getByText(mockPosts[1].title.rendered)).toBeInTheDocument();
 });
@@ -116,9 +116,9 @@ test('renders home page with error message when request fails', async () => {
     </QueryClientProvider>,
   );
 
-  await waitForElementToBeRemoved(screen.queryByText(messages.mainPage.loadingPosts), {
+  await waitForElementToBeRemoved(screen.queryByText(texts.mainPage.loadingPosts), {
     timeout: 10000,
   });
-  expect(screen.getByText(messages.mainPage.error)).toBeInTheDocument();
-  expect(screen.getByText(messages.mainPage.errorFetchingPosts)).toBeInTheDocument();
+  expect(screen.getByText(texts.mainPage.error)).toBeInTheDocument();
+  expect(screen.getByText(texts.mainPage.errorFetchingPosts)).toBeInTheDocument();
 });

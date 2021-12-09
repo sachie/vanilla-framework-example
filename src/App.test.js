@@ -1,6 +1,6 @@
 import { MemoryRouter } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
-import messages from 'utils/texts';
+import texts from 'utils/texts';
 import App from './App';
 
 test('renders App', () => {
@@ -9,9 +9,9 @@ test('renders App', () => {
       <App />
     </MemoryRouter>,
   );
-  const titleElement = screen.getByText(messages.common.title);
+  const titleElement = screen.getByText(texts.common.title);
   expect(titleElement).toBeInTheDocument();
 
-  const subtitleElement = screen.getByText(messages.mainPage.sachie);
+  const subtitleElement = screen.getByText(texts.mainPage.sachie);
   expect(subtitleElement).toBeInTheDocument();
 });

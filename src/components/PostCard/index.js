@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { Card, Link } from '@canonical/react-components';
 import PropTypes from 'prop-types';
-import messages from 'utils/texts';
+import texts from 'utils/texts';
 import styles from './postCard.module.scss';
 
 /**
@@ -24,7 +24,7 @@ const PostCard = ({ topic, title, postLink, imageSrc, authorName, authorLink, da
           <h4 className={styles.linkText}>{title}</h4>
         </Link>
         <div className={styles.info}>
-          {messages.common.by} <Link href={authorLink}>{authorName}</Link> {messages.card.on}{' '}
+          {texts.common.by} <Link href={authorLink}>{authorName}</Link> {texts.card.on}{' '}
           {formattedDate}
         </div>
       </div>

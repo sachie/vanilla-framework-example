@@ -4,7 +4,7 @@ import { Spinner, Notification, Link } from '@canonical/react-components';
 import PostCard from 'components/PostCard';
 import { getPosts } from 'services/postService';
 import constants from 'utils/constants';
-import messages from 'utils/texts';
+import texts from 'utils/texts';
 import pageStyles from 'pages/pages.module.scss';
 import styles from './home.module.scss';
 
@@ -55,13 +55,13 @@ const findEmbeddedDetails = post => {
  */
 const renderContent = (isLoading, posts, error) => {
   if (isLoading) {
-    return <Spinner text={messages.mainPage.loadingPosts} className={styles.spinner} />;
+    return <Spinner text={texts.mainPage.loadingPosts} className={styles.spinner} />;
   }
 
   if (error) {
     return (
-      <Notification severity="negative" title={messages.mainPage.error}>
-        {messages.mainPage.errorFetchingPosts}
+      <Notification severity="negative" title={texts.mainPage.error}>
+        {texts.mainPage.errorFetchingPosts}
       </Notification>
     );
   }
@@ -100,10 +100,9 @@ const Home = () => {
 
   return (
     <div className={pageStyles.container}>
-      <h1>{messages.common.title}</h1>
+      <h1>{texts.common.title}</h1>
       <h3 className={styles.subtitle}>
-        {messages.common.by}{' '}
-        <Link href={constants.links.githubProfile}>{messages.mainPage.sachie}</Link>
+        {texts.common.by} <Link href={constants.links.githubProfile}>{texts.mainPage.sachie}</Link>
       </h3>
       <div className={styles.main}>{renderContent(isLoading, posts, error)}</div>
     </div>
