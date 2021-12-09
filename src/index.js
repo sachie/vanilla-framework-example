@@ -5,7 +5,7 @@ import App from 'App';
 import './assets/styles/index.scss';
 
 ReactDOM.render(
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <App />
   </Router>,
   document.querySelector('#root'),
