@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/vanilla-framework-example/static/css/main.a2ac31b3.chunk.css",
+    "main.js": "/vanilla-framework-example/static/js/main.afc9f49f.chunk.js",
+    "main.js.map": "/vanilla-framework-example/static/js/main.afc9f49f.chunk.js.map",
+    "runtime-main.js": "/vanilla-framework-example/static/js/runtime-main.b0a84747.js",
+    "runtime-main.js.map": "/vanilla-framework-example/static/js/runtime-main.b0a84747.js.map",
+    "static/js/2.fe254ebc.chunk.js": "/vanilla-framework-example/static/js/2.fe254ebc.chunk.js",
+    "static/js/2.fe254ebc.chunk.js.map": "/vanilla-framework-example/static/js/2.fe254ebc.chunk.js.map",
+    "index.html": "/vanilla-framework-example/index.html",
+    "static/css/main.a2ac31b3.chunk.css.map": "/vanilla-framework-example/static/css/main.a2ac31b3.chunk.css.map",
+    "static/js/2.fe254ebc.chunk.js.LICENSE.txt": "/vanilla-framework-example/static/js/2.fe254ebc.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/vanilla-framework-example/static/media/Ubuntu-Regular.fbdecfce.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0a84747.js",
+    "static/js/2.fe254ebc.chunk.js",
+    "static/css/main.a2ac31b3.chunk.css",
+    "static/js/main.afc9f49f.chunk.js"
+  ]
+}
