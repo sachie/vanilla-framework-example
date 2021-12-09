@@ -1,0 +1,77 @@
+// Styles for PostCard component.
+
+@import 'assets/styles/shared';
+
+// Overrides some Vanilla Card styles.
+.card {
+  max-width: 22rem;
+  min-width: 18rem;
+  border-top: solid 0.35rem $secondary-color !important;
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+  padding: 0.5rem 1.3rem 1rem 1.3rem !important;
+  margin: 1rem !important;
+  box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.15);
+
+  hr {
+    border-top: dotted 1px rgba(0, 0, 0, 0.15);
+    background: none;
+    margin: 0 0 0 -0.5rem;
+    width: 20.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: $text-color-muted;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+  }
+}
+
+.content {
+  padding: 1rem 0;
+
+  a {
+    &:hover,
+    &:visited {
+      text-decoration: underline $text-color-link;
+    }
+
+    &:active {
+      text-decoration: underline $text-color-link-active;
+    }
+  }
+}
+
+// Prettier link styles
+.linkText {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $text-color-link !important;
+  height: 6.2rem;
+  overflow: hidden;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.info {
+  height: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 0;
+  color: $text-color-muted;
+
+  a {
+    color: #1f95cd !important;
+  }
+}
+
+.footer {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: $text-color-muted;
+  margin-top: 1.2rem;
+  margin-bottom: 0.2rem;
+}

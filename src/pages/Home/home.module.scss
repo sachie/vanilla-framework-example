@@ -1,0 +1,26 @@
+// Styles for Home Page
+
+.main {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: start;
+}
+
+.subtitle {
+  margin: 0;
+  max-width: none;
+}
+
+// Enlarges the Vanilla Spinner
+.spinner {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+
+  i {
+    width: 2rem;
+    height: 2rem;
+  }
+}

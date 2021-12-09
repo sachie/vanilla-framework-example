@@ -1,0 +1,26 @@
+// Main stylesheet for entire app.
+
+@import './shared';
+
+// Import Vanilla framework
+@import 'node_modules/vanilla-framework/scss/vanilla';
+
+// Include all of Vanilla Framework
+@include vanilla;
+
+// Include Ubuntu font
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ubuntu'), url(../fonts/Ubuntu-Regular.ttf) format('truetype');
+}
+
+body {
+  font-family: Ubuntu, sans-serif !important;
+  font-style: normal !important;
+  font-size: #{$unit} !important;
+  letter-spacing: normal !important;
+  line-height: 1 !important;
+  margin: 0;
+}

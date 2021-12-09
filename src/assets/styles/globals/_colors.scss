@@ -1,0 +1,16 @@
+// Color variables
+
+$primary-color: #886281;
+$secondary-color: #a87ca0;
+$text-color-muted: #6e6e6e;
+$text-color-link: #1f95cd;
+$text-color-link-active: #1678a5;
+
+// If they need to be accessed from JS:
+:export {
+  primary-color: $primary-color;
+  secondary-color: $secondary-color;
+  text-color-muted: $text-color-muted;
+  text-color-link: $text-color-link;
+  text-color-link-active: $text-color-link-active;
+}
